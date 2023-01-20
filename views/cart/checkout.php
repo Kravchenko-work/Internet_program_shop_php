@@ -36,7 +36,7 @@ include (ROOT . '/views/parts/header.php');
             <form action="#" method="post" id="checkout_form">
                 <p>Для оформления заказа заполните форму. Наш менеджер свяжется с Вами.</p>
                 <input required type="text" name="name" placeholder="Введите имя" value="<?php echo $userName;?>">
-                <input required type="tel" name="tel" pattern="0([0-9]{2})([0-9]{7})" placeholder="Телефон в формате: 0(xx)-xxx-xx-xx">
+                <input required type="tel" name="tel" placeholder="Телефон в формате: 0(xx)-xxx-xx-xx">
                 <textarea name="comment" placeholder="Комментарий к заказу"></textarea>
                 <input type=submit name="submit" value="Оформить заказ" id="check_btn">
             </form>

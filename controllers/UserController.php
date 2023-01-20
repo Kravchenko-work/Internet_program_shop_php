@@ -80,12 +80,15 @@ class UserController {
             //Проверяем, существует ли пользователь
             $userId = User::checkUserData($email, $password);
 
+            //ХАРДКОД
+            // header("Location: /cabinet/"); //перенаправляем в личный кабинет
+
             if ($userId == false) {
-                $errors[] = "Пользователя с таким email или паролем не существует";
+                // $errors[] = "Пользователя с таким email или паролем не существует";
             }else{
                 User::auth($userId); //записываем пользователя в сессию
 
-                header("Location: /cabinet/"); //перенаправляем в личный кабинет
+                // header("Location: /cabinet/"); //перенаправляем в личный кабинет
             }
         }
 

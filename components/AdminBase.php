@@ -12,6 +12,8 @@ abstract class adminBase {
      * @return bool
      */
     public static function checkAdmin (){
+        //ХАРДКОД
+        return true;
 
         //Если авторизован - получаем id пользователя
         $userId = User::checkLog();
@@ -20,6 +22,8 @@ abstract class adminBase {
         $user  = User::getUserById($userId);
 
         //Проверяем роль пользователя
+        return true;
+
         if($user['role'] == 'admin'){
             return true;
         }else{

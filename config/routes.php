@@ -56,7 +56,7 @@ return array(
 
     'admin' => 'admin/index',
 
-    //Главаня страница
-    'index.php' => 'index/index', //вызываем actionIndex в IndexController
-    '' => 'index/index'  //вызываем actionIndex в IndexController
+    
+    'index.php' => 'index/index', 
+    '' => 'index/index'  
 );
