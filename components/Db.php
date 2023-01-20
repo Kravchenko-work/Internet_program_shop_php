@@ -11,7 +11,7 @@ class Db {
         $dsn = "mysql:host={$params['host']};dbname={$params['db_name']}";
         $db = new PDO($dsn, $params['user'], $params['pass']);
         $db->exec("set names utf8");
-        $db->query("SET time_zone = 'Europe/Kiev'");
+        $db->query("SET time_zone = 'Europe/Russia'");
 
         return $db;
     }
